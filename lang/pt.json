@@ -1,0 +1,17 @@
+{
+  "app_name": "Meu IMC",
+  "intro":{
+    "wellcome": "Bem vindo ao PostIn",
+    "start": "COMEÇAR",
+    "or": "ou",
+    "login_google": "ENTRAR COM GOOGLE",
+    "text_step1": "Compartilhe suas fotos favoritas",
+    "text_step2": "Compartilhe momentos, experiência e amizades",
+    "text_step3": "Seja o que você quiser, se comunique e aprenda com os outros"
+  },
+  "welcome": "Bem vindo!",
+  "login": "Entrar",
+  "logout": "Sair",
+  "theme_dark": "Tema Escuro",
+  "theme_light": "Tema Claro"
+}
