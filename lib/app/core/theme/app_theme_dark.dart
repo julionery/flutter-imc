@@ -8,7 +8,7 @@ class AppThemeDark implements IThemeAppInterface {
   ThemeData getTheme() {
     return ThemeData(
       fontFamily: 'Google',
-      primaryColor: const Color(0xFF252525),
+      primaryColor: ColorsConst().secondDarkColor(1),
       brightness: Brightness.dark,
       scaffoldBackgroundColor: const Color(0xFF2C2C2C),
       accentColor: ColorsConst().accentDarkColor(1),
@@ -57,7 +57,6 @@ class AppThemeDark implements IThemeAppInterface {
     );
   }
 
-  @override
   String themeToString() {
     return ThemeMode.dark.toString();
   }

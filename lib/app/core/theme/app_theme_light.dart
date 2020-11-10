@@ -56,7 +56,6 @@ class AppThemeLight implements IThemeAppInterface {
     );
   }
 
-  @override
   String themeToString() {
     return ThemeMode.light.toString();
   }

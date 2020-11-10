@@ -1,8 +1,8 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
-import 'package:imc_app/app/interfaces/shared_repository_interface.dart';
 
 import '../../core/consts/routers_const.dart';
+import '../../interfaces/shared_repository_interface.dart';
 
 class SplashScreen extends StatefulWidget {
   @override
@@ -21,7 +21,7 @@ class _SplashScreenState extends State<SplashScreen> {
     final app = Modular.get<ISharedRepositoryInterface>();
     final skipIntro = await app.readUserSkipIntro();
 
-    if (!skipIntro) {
+    if (skipIntro) {
       Modular.to.pushReplacementNamed(RoutersConst.home);
     } else {
       Modular.to.pushReplacementNamed(RoutersConst.intro);

@@ -3,15 +3,8 @@
   "intro":{
     "wellcome": "Wellcome to My BMI Calculator",
     "start": "START",
-    "or": "or",
-    "login_google": "LOGIN WITH GOOGLE",
-    "text_step1": "Share your favorite photos",
-    "text_step2": "Share moments, experiences and friendly's",
-    "text_step3": "Whatever you want, communicate and learn from others"
-  },
-  "welcome": "Welcome!",
-  "login": "Login",
-  "logout": "Logout",
-  "theme_dark": "Theme Dark",
-  "theme_light": "Theme Light"
+    "text_step1": "The acronym BMI stands for Body Mass Index. It was implemented by the World Health Organization in 1997.\n\nBMI is a standard for assessing risks related to underweight or being overweight.",
+    "text_step2": "Being within the ideal weight is important for health promotion, aiming to prevent diseases and ensure quality of life.\n\nTherefore, when being underweight, it is recommended to seek an increase in muscle volume to increase weight in a healthy way. And for those who are overweight, it is recommended that there is a search for healthy habits associated with physical activity, to obtain better health.",
+    "text_step3": "By calculating your Body Mass Index, it is possible to prevent diseases of high health risk.\n\nWith My BMI Calculator you can know if you are within the ideal weight and follow your evolution.\n\nStay healthy, see you later."
+  }
 }

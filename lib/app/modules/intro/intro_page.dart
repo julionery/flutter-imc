@@ -1,8 +1,7 @@
-import 'package:flutter_custom_clippers/flutter_custom_clippers.dart';
-import 'package:flutter_modular/flutter_modular.dart';
 import 'package:flutter/material.dart';
-import 'package:imc_app/app/core/consts/colors_const.dart';
-import 'package:imc_app/app/core/localization/app_translate.dart';
+import 'package:flutter_modular/flutter_modular.dart';
+
+import '../../core/localization/app_translate.dart';
 import 'intro_controller.dart';
 import 'widgets/slide_dots_widget.dart';
 import 'widgets/slide_widget.dart';
@@ -21,46 +20,53 @@ class _IntroPageState extends ModularState<IntroPage, IntroController> {
   int currentIndex = 0;
   @override
   Widget build(BuildContext context) {
-    final _height = MediaQuery.of(context).size.height;
     return Scaffold(
       body: SafeArea(
-        child: Stack(children: [
-          Container(
-            padding: const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
-            child: Column(
+        child: Container(
+          color: Theme.of(context).primaryColor,
+          child: Stack(children: [
+            Column(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
-              children: <Widget>[
+              children: [
                 Expanded(
-                  child: Column(
-                    children: [
-                      Text(
-                        AppTranslate(context).text('intro.wellcome'),
-                        style: Theme.of(context)
-                            .textTheme
-                            .headline5
-                            .copyWith(fontWeight: FontWeight.bold),
-                      ),
-                      Expanded(
-                        child: SlideWidget(
-                          onPageChanged: (index) {
-                            setState(() {
-                              currentIndex = index;
-                            });
-                          },
+                  child: Container(
+                    decoration: const BoxDecoration(
+                        color: Colors.white,
+                        borderRadius: BorderRadius.only(
+                            bottomRight: Radius.circular(150))),
+                    padding: const EdgeInsets.only(
+                        top: 30, left: 30, right: 30, bottom: 30),
+                    child: Column(
+                      mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                      children: [
+                        Text(
+                          AppTranslate(context).text('intro.wellcome'),
+                          style: Theme.of(context)
+                              .textTheme
+                              .headline5
+                              .copyWith(fontWeight: FontWeight.bold),
                         ),
-                      ),
-                      SlideDotsWidget(
-                        currentPage: currentIndex,
-                      ),
-                    ],
+                        Expanded(
+                          child: SlideWidget(
+                            onPageChanged: (index) {
+                              setState(() {
+                                currentIndex = index;
+                              });
+                            },
+                          ),
+                        ),
+                        SlideDotsWidget(
+                          currentPage: currentIndex,
+                        ),
+                      ],
+                    ),
                   ),
                 ),
-                SizedBox(
-                  height: _height * 0.06,
-                ),
                 Container(
-                  width: 250,
+                  padding:
+                      const EdgeInsets.symmetric(horizontal: 30, vertical: 30),
                   child: RaisedButton(
+                    color: Colors.white,
                     onPressed: controller.doEnter,
                     shape: RoundedRectangleBorder(
                         borderRadius: BorderRadius.circular(20)),
@@ -87,8 +93,8 @@ class _IntroPageState extends ModularState<IntroPage, IntroController> {
                 ),
               ],
             ),
-          ),
-        ]),
+          ]),
+        ),
       ),
     );
   }

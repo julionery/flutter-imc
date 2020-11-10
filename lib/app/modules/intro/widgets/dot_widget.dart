@@ -12,7 +12,7 @@ class Dot extends StatelessWidget {
     return Padding(
       padding: const EdgeInsets.only(left: 8.0, right: 8.0),
       child: AnimatedContainer(
-        duration: Duration(milliseconds: 300),
+        duration: const Duration(milliseconds: 300),
         decoration: BoxDecoration(
           shape: BoxShape.circle,
           color:

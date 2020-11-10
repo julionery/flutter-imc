@@ -11,11 +11,11 @@ class SlideWidget extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Padding(
-      padding: const EdgeInsets.only(top: 10, bottom: 0),
+      padding: const EdgeInsets.only(top: 16, bottom: 16),
       child: SizedBox(
         height: MediaQuery.of(context).size.height * 0.4,
         child: PageView(
-          physics: BouncingScrollPhysics(),
+          physics: const BouncingScrollPhysics(),
           onPageChanged: onPageChanged,
           children: <Widget>[
             SlidePageWidget(

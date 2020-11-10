@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-import '../../../core/consts/colors_const.dart';
+import 'package:flutter_svg/svg.dart';
+import 'package:imc_app/app/core/consts/colors_const.dart';
 
 class SlidePageWidget extends StatelessWidget {
   final String text;
@@ -17,20 +17,16 @@ class SlidePageWidget extends StatelessWidget {
       children: <Widget>[
         Text(
           text,
-          style: Theme.of(context)
-              .textTheme
-              .headline6
-              .copyWith(color: ColorsConst.grey600, fontSize: 18),
+          textAlign: TextAlign.justify,
+          style: Theme.of(context).textTheme.headline6.copyWith(
+                color: ColorsConst.grey600,
+              ),
         ),
-        Container(
-          child: Align(
-            alignment: Alignment.center,
-            child: Image.asset(
-              asset,
-              height: MediaQuery.of(context).size.height * 0.3,
-            ),
-          ),
-        )
+        Align(
+            child: SvgPicture.asset(
+          asset,
+          height: MediaQuery.of(context).size.height * 0.3,
+        ))
       ],
     );
   }

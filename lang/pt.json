@@ -1,17 +1,10 @@
 {
   "app_name": "Meu IMC",
   "intro":{
-    "wellcome": "Bem vindo ao PostIn",
+    "wellcome": "Bem vindo ao Meu IMC",
     "start": "COMEÇAR",
-    "or": "ou",
-    "login_google": "ENTRAR COM GOOGLE",
-    "text_step1": "Compartilhe suas fotos favoritas",
-    "text_step2": "Compartilhe momentos, experiência e amizades",
-    "text_step3": "Seja o que você quiser, se comunique e aprenda com os outros"
-  },
-  "welcome": "Bem vindo!",
-  "login": "Entrar",
-  "logout": "Sair",
-  "theme_dark": "Tema Escuro",
-  "theme_light": "Tema Claro"
+    "text_step1": "A sigla IMC significa Índice de Massa Corporal. Foi implementado pela Organização Mundial de Saúde em 1997.\n\nO IMC corresponde a um padrão para avaliar os riscos relacionados com a insuficiência ou o excesso de peso.",
+    "text_step2": "Estar dentro do peso ideal é importante para a promoção da saúde, visando a prevenção de doenças e garantir a qualidade de vida.\n\nPor isso, ao estar abaixo do peso o indicado é buscar o aumento do volume muscular para aumentar de peso de forma saudável. E para quem está acima do peso o indicado é que haja busca por hábitos saudáveis associados à atividade física, para obter uma saúde melhor.",
+    "text_step3": "Através do cálculo do seu Índice de Massa Corporal, é possível previnir doenças de alto risco para a saúde.\n\nCom o Meu IMC você pode saber se está dentro do peso ideal e acompanhar a sua evolução.\n\nMantenha-se saudável, até mais."
+  }
 }
