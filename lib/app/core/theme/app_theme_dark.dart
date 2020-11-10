@@ -19,35 +19,35 @@ class AppThemeDark implements IThemeAppInterface {
           foregroundColor: Colors.white),
       textTheme: TextTheme(
         button: const TextStyle(color: Color(0xFF252525)),
-        headline:
-            TextStyle(fontSize: 20.0, color: ColorsConst().secondDarkColor(1)),
-        display1: TextStyle(
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-            color: ColorsConst().secondDarkColor(1)),
-        display2: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w600,
-            color: ColorsConst().secondDarkColor(1)),
-        display3: TextStyle(
-            fontSize: 22.0,
-            fontWeight: FontWeight.w700,
-            color: ColorsConst().secondDarkColor(1)),
-        display4: TextStyle(
+        headline1: TextStyle(
             fontSize: 22.0,
             fontWeight: FontWeight.w300,
             color: ColorsConst().secondDarkColor(1)),
-        subhead: TextStyle(
-            fontSize: 15.0,
-            fontWeight: FontWeight.w500,
+        headline2: TextStyle(
+            fontSize: 22.0,
+            fontWeight: FontWeight.w700,
             color: ColorsConst().secondDarkColor(1)),
-        title: TextStyle(
+        headline3: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
+            color: ColorsConst().secondDarkColor(1)),
+        headline4: TextStyle(
+            fontSize: 18.0,
+            fontWeight: FontWeight.w600,
+            color: ColorsConst().secondDarkColor(1)),
+        headline5:
+            TextStyle(fontSize: 20.0, color: ColorsConst().secondDarkColor(1)),
+        headline6: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600,
             color: ColorsConst().secondDarkColor(1)),
-        body1:
+        subtitle1: TextStyle(
+            fontSize: 15.0,
+            fontWeight: FontWeight.w500,
+            color: ColorsConst().secondDarkColor(1)),
+        bodyText2:
             TextStyle(fontSize: 12.0, color: ColorsConst().secondDarkColor(1)),
-        body2: TextStyle(
+        bodyText1: TextStyle(
             fontSize: 14.0,
             fontWeight: FontWeight.w600,
             color: ColorsConst().secondDarkColor(1)),

@@ -24,6 +24,21 @@ mixin _$AppController on _AppControllerBase, Store {
     });
   }
 
+  final _$themeModeAtom = Atom(name: '_AppControllerBase.themeMode');
+
+  @override
+  ThemeMode get themeMode {
+    _$themeModeAtom.reportRead();
+    return super.themeMode;
+  }
+
+  @override
+  set themeMode(ThemeMode value) {
+    _$themeModeAtom.reportWrite(value, super.themeMode, () {
+      super.themeMode = value;
+    });
+  }
+
   final _$loadThemeDataAsyncAction =
       AsyncAction('_AppControllerBase.loadThemeData');
 
@@ -36,15 +51,16 @@ mixin _$AppController on _AppControllerBase, Store {
       AsyncAction('_AppControllerBase.setThemeData');
 
   @override
-  Future<void> setThemeData(ThemeMode themeMode, {bool saveShared = true}) {
+  Future<void> setThemeData(ThemeMode mode, {bool saveShared = true}) {
     return _$setThemeDataAsyncAction
-        .run(() => super.setThemeData(themeMode, saveShared: saveShared));
+        .run(() => super.setThemeData(mode, saveShared: saveShared));
   }
 
   @override
   String toString() {
     return '''
-themeApp: ${themeApp}
+themeApp: ${themeApp},
+themeMode: ${themeMode}
     ''';
   }
 }

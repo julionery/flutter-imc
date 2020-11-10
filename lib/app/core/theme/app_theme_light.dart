@@ -19,34 +19,35 @@ class AppThemeLight implements IThemeAppInterface {
           foregroundColor: Colors.white),
       textTheme: TextTheme(
         button: const TextStyle(color: Colors.white),
-        headline:
-            TextStyle(fontSize: 20.0, color: ColorsConst().secondColor(1)),
-        display1: TextStyle(
-            fontSize: 18.0,
-            fontWeight: FontWeight.w600,
-            color: ColorsConst().secondColor(1)),
-        display2: TextStyle(
-            fontSize: 20.0,
-            fontWeight: FontWeight.w600,
-            color: ColorsConst().secondColor(1)),
-        display3: TextStyle(
-            fontSize: 22.0,
-            fontWeight: FontWeight.w700,
-            color: ColorsConst().mainColor(1)),
-        display4: TextStyle(
+        headline1: TextStyle(
             fontSize: 22.0,
             fontWeight: FontWeight.w300,
             color: ColorsConst().secondColor(1)),
-        subhead: TextStyle(
-            fontSize: 15.0,
-            fontWeight: FontWeight.w500,
+        headline2: TextStyle(
+            fontSize: 22.0,
+            fontWeight: FontWeight.w700,
+            color: ColorsConst().mainColor(1)),
+        headline3: TextStyle(
+            fontSize: 20.0,
+            fontWeight: FontWeight.w600,
             color: ColorsConst().secondColor(1)),
-        title: TextStyle(
+        headline4: TextStyle(
+            fontSize: 18.0,
+            fontWeight: FontWeight.w600,
+            color: ColorsConst().secondColor(1)),
+        headline5:
+            TextStyle(fontSize: 20.0, color: ColorsConst().secondColor(1)),
+        headline6: TextStyle(
             fontSize: 16.0,
             fontWeight: FontWeight.w600,
             color: ColorsConst().mainColor(1)),
-        body1: TextStyle(fontSize: 12.0, color: ColorsConst().secondColor(1)),
-        body2: TextStyle(
+        subtitle1: TextStyle(
+            fontSize: 15.0,
+            fontWeight: FontWeight.w500,
+            color: ColorsConst().secondColor(1)),
+        bodyText2:
+            TextStyle(fontSize: 12.0, color: ColorsConst().secondColor(1)),
+        bodyText1: TextStyle(
             fontSize: 14.0,
             fontWeight: FontWeight.w600,
             color: ColorsConst().secondColor(1)),

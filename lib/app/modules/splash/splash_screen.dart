@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:flutter_modular/flutter_modular.dart';
+import 'package:imc_app/app/core/consts/colors_const.dart';
 
 import '../../core/consts/routers_const.dart';
 import '../../interfaces/shared_repository_interface.dart';
@@ -34,11 +35,11 @@ class _SplashScreenState extends State<SplashScreen> {
       body: Stack(
         children: [
           Container(
-            decoration: const BoxDecoration(
-                gradient: LinearGradient(
-                    colors: [Color(0xFF40A4fC), Color(0xFF245A89)],
-                    begin: Alignment.topLeft,
-                    end: Alignment.bottomRight)),
+            decoration: BoxDecoration(
+                gradient: LinearGradient(colors: [
+              ColorsConst().mainColor(1),
+              const Color(0xFF245A89)
+            ], begin: Alignment.topLeft, end: Alignment.bottomRight)),
           ),
           Center(
             child: Column(
